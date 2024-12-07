@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastrim Kimik Tirana</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #34005e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+
+        #map {
+            height: 400px;
+            width: 100%;
+            margin: 20px auto;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pastrim Kimik Tirana</h1>
+        <p>"Pastrim profesional për çdo rrobë!"</p>
+
+        <script src="style.css"></script> 
+
+    </header>
+
+    <nav>
+        <a href="#about">Rreth Nesh</a>
+        <a href="#services">Shërbimet</a>
+        <a href="#gallery">Galeria</a>
+        <a href="#contact">Kontakti</a>
+    </nav>
+    
+    <section id="about">
+        <h2>Rreth Nesh</h2>
+        <p>Ne jemi lider në pastrimin kimik me vite eksperiencë dhe pajisjet më të mira në treg.</p>
+    </section>
+    
+    <section id="services">
+        <h2>Shërbimet</h2>
+        <ul>
+            <li>Pastrimi Kimik</li>
+            <li>Heqja e njollave</li>
+            <li>Pastrimi i veçantë për pëlhura delikate</li>
+        </ul>
+    </section>
+   
+    <section id="gallery" class="gallery">
+        <h2>Galeria</h2>
+        <p>Pas:</p>
+        <img src="pic1.PNG" alt="Para pastrimit">
+    </section>
+
+    <section id="gallery" class="gallery">
+        <p>Pas:</p>
+        <img src="pic2.PNG" alt="Pas pastrimit">
+
+     </section>
+    
+     <section id="contact">
+        <h2>Kontakti</h2>
+        <p>Na gjeni në hartë:</p>
+        <div id="map" style="height: 300px; background-color: lightgrey;"></div>
+    </section>
+    
+    <div id="map"></div>
+    
+    <footer>
+        <p>© 2024 Pastrim Kimik Tirana. Të drejtat e rezervuara.</p>
+    </footer>
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
